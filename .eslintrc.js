@@ -1,8 +1,8 @@
 module.exports = {
   env: {
+    node: true,
     browser: true,
     es6: true,
-    node: true, // Enable Node.js globals like "module"
     "jest/globals": true,
   },
   extends: ["eslint:recommended", "plugin:react/recommended"],
@@ -15,10 +15,9 @@ module.exports = {
   },
   plugins: ["react", "jest"],
   rules: {
+    quotes: "off", // Disable quotes rule
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
-    quotes: ["error", "single"],
-    semi: ["error", "never"],
     eqeqeq: "error",
     "no-trailing-spaces": "error",
     "object-curly-spacing": ["error", "always"],
